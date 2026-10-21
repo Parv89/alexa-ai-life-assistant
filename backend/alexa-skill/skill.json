@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Executive life assistant, smart-space controller, and productivity tracker.",
+          "examplePhrases": [
+            "Alexa, open life assistant",
+            "Alexa, ask life assistant what are my tasks",
+            "Alexa, ask life assistant to add task prepare presentation",
+            "Alexa, ask life assistant for my daily briefing"
+          ],
+          "name": "Alexa AI Life Assistant",
+          "description": "Alexa AI Life Assistant synchronizes your daily tasks, voice productivity summaries, and simulated smart home endpoints using official ASK JSON standards."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Deploy backend to HTTPS host or run ngrok on port 5000 and bind to /api/alexa/webhook. Say 'Alexa, open life assistant'.",
+      "category": "PRODUCTIVITY"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "https://<your-verified-backend-endpoint>/api/alexa/webhook"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

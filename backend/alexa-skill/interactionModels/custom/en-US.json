@@ -1,0 +1,124 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "life assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "never mind",
+            "exit"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "what can you do",
+            "how do i use this",
+            "what can i say"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "bye",
+            "goodbye",
+            "quit"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetTasksIntent",
+          "slots": [],
+          "samples": [
+            "what are my tasks",
+            "what is my schedule",
+            "read my to do list",
+            "what do i have to do today",
+            "list my urgent tasks",
+            "give me my task summary",
+            "what's on my agenda",
+            "tell me my tasks"
+          ]
+        },
+        {
+          "name": "AddTaskIntent",
+          "slots": [
+            {
+              "name": "TaskTitle",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "Priority",
+              "type": "PriorityType"
+            }
+          ],
+          "samples": [
+            "add task {TaskTitle}",
+            "create a task {TaskTitle}",
+            "remind me to {TaskTitle}",
+            "add an urgent task {TaskTitle}",
+            "new task {TaskTitle} with priority {Priority}",
+            "put {TaskTitle} on my to do list"
+          ]
+        },
+        {
+          "name": "DeviceControlIntent",
+          "slots": [
+            {
+              "name": "DeviceName",
+              "type": "AMAZON.Room"
+            },
+            {
+              "name": "Action",
+              "type": "ActionType"
+            }
+          ],
+          "samples": [
+            "{Action} the {DeviceName}",
+            "{Action} {DeviceName}",
+            "turn {Action} {DeviceName} light",
+            "switch {Action} {DeviceName}"
+          ]
+        },
+        {
+          "name": "DailyBriefingIntent",
+          "slots": [],
+          "samples": [
+            "give me my daily briefing",
+            "what is my life briefing",
+            "morning update",
+            "brief me on today",
+            "give me a summary of my day"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "PriorityType",
+          "values": [
+            { "name": { "value": "urgent" } },
+            { "name": { "value": "high" } },
+            { "name": { "value": "medium" } },
+            { "name": { "value": "low" } }
+          ]
+        },
+        {
+          "name": "ActionType",
+          "values": [
+            { "name": { "value": "on" } },
+            { "name": { "value": "off" } },
+            { "name": { "value": "lock" } },
+            { "name": { "value": "unlock" } }
+          ]
+        }
+      ]
+    }
+  }
+}

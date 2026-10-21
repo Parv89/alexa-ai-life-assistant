@@ -1,0 +1,27 @@
+{
+  "name": "alexa-ai-life-assistant",
+  "version": "1.0.0",
+  "description": "Alexa AI Life Assistant - Premium Autonomous Life, IoT, and Productivity Management Suite with MongoDB and ASK Compatibility",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start:backend": "npm --prefix backend start"
+  },
+  "keywords": [
+    "alexa",
+    "alexa-plus",
+    "ask",
+    "life-assistant",
+    "productivity",
+    "smart-home",
+    "mongodb",
+    "react",
+    "vite",
+    "express"
+  ],
+  "author": "Antigravity Team",
+  "license": "MIT"
+}
